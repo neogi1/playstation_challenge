@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/app.css" />
+    </head>
+
+    <body>
+        <div id="pageConstraints">
+            <header>
+                <form onsubmit="return false;">
+                    <input type="text" size="30" id="input_query" placeholder="Search query..." value="" />
+                    <button id="btn_BeginSearch">Search</button>
+                </form>
+            </header>
+            <main class="hide">
+                <section id="pagination">
+                    <div>Total results: <span id="totalResults"> </span></div>
+                    <div id="pageCounter">
+                        <span id="prev"></span>
+                        <span id="pageTracker">
+                            <span id="currentPage">1</span>
+                            &sol;
+                            <span id="totalPages"></span>
+                        </span>
+                        <span id="next"></div>
+                </section>
+            </main>
+        </div>
+        <script type="text/javascript" src="scripts/GetStreamData.js"></script>
+        <script type="text/javascript" src="scripts/PageManager.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+    </body>
+</html>

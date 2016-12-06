@@ -1,0 +1,140 @@
+/* Page Styles */
+html, body {
+    font: 10px normal arial, sans-serif;
+}
+
+#pageConstraints {
+    border: 1px solid #000;
+    color: #000;
+    margin: 20px auto;
+    width: 650px;
+}
+
+
+/* Header styles */
+#pageConstraints > header {
+    font-size: 1.2rem;
+    padding: 40px 20px 20px 20px;
+}
+
+#pageConstraints > header input {
+    border: 1px solid #919191;
+    height: 25px;
+    padding-left: 5px; 
+    width: 145px;
+}
+
+#pageConstraints > header button {
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #ccc;
+    color: #494949;
+    height: 25px;
+    margin-left: 4px;
+    width: 80px;
+}
+
+#pageConstraints main {
+    border-top: 1px solid black;
+    position: relative;
+    padding-bottom: 13px;
+}
+
+#pageConstraints main.hide {
+    display: none;
+}
+
+
+/* Pagination styles */
+#pagination {
+    font-size: 1.1rem;
+    padding: 6px 13px 0 11px;
+}
+
+#pagination > div {
+    display: inline-block;
+}
+
+#pagination > div:nth-child(2) {
+    position: absolute;
+    right: 11px;
+}
+
+#pagination div > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#pagination span#pageTracker {
+    margin: 1px 8px 0 6px;
+}
+
+#pagination span#prev,
+#pagination span#next {
+    background: url('/images/pagination-arrow.png') 0 0 no-repeat;
+    height: 12px;
+    width: 10px;   
+}
+
+#pagination span#next {
+    transform: rotate(180deg);
+    transform-origin: center center;
+}
+
+
+/* Streams styles */
+#streamsContainer {
+    display: block;
+    padding: 0;
+}
+
+#streamsContainer .stream {
+    padding: 16px 17px 0;
+}
+
+#streamsContainer .previewImg {
+    display: inline-block;
+    height: 91px;
+    padding-right: 18px;
+    width: 100px;
+    vertical-align: top;
+}
+
+#streamsContainer .previewImg img {
+    display: inline-block;
+}
+
+#streamsContainer .streamInfo {
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: top;
+}
+
+#streamsContainer .streamInfo h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#streamsContainer .streamInfo p {
+    font-size: 1.5rem;
+}
+
+
+
+
+/* Vendor-specific styles */
+
+#pageConstraints header button {
+    background: #fdfdfd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fdfdfd 0%, #eeeeee 50%, #ebebeb 100%); /* Firefox 3-15 */
+    background: -webkit-linear-gradient(top,  #fdfdfd 0%,#eeeeee 50%,#ebebeb 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom,  #fdfdfd 0%,#eeeeee 50%,#ebebeb 100%); /* W3C standard */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#ebebeb',GradientType=0 ); /* IE 6-9 */
+}
+
+
+
+/* Styles for pseudo elements */
+::-webkit-input-placeholder { color: #000; font-style: italic; } /* Chrome, Safari */
+::-moz-placeholder { color: #000; font-style: italic;  } /* Firefox 19+ */
+:-moz-placeholder { color: #000; font-style: italic;  }/* Upto and including Firefox 18 */
+:-ms-input-placeholder { color: #000; font-style: italic;  }/* IE 10+ */
